@@ -365,12 +365,15 @@ body{
       font-size: 25px;
       margin-left: 2%;
       font-family: 'Lato', sans-serif;
-      font-weight: bold;;
+      font-weight: bold;
     }
   }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 94d6741d49cd0276af0805bfb6ba7169e067cece
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #SignUpLogin{
@@ -418,7 +421,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width:1100px;
+    width: 1100px;
     height:150px;
     justify-content: space-between;
     align-items: center;
@@ -545,12 +548,10 @@ body{
     font-size: 25px;
     margin-left: 2%;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;;
+    font-weight: bold;
   }
 
 
-
-}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #SignUpLogin{
@@ -725,6 +726,7 @@ body{
     font-size: 25px;
     margin-left: 2%;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;;
+    font-weight: bold;
   }
-  }
+}
+}
