@@ -1,0 +1,731 @@
+body{
+  /* background-color: #B6EADD; */
+  background-color : #F8F8F8;
+   /* background: #FFFFFF; */
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #SignUpLogin{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 60%;
+    font-family: 'Lato', sans-serif;
+  }
+  #SignUpLogin:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #Header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size:35px;
+    color: #43464B;
+  }
+
+  .HeaderDiv{
+    margin-top: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 67px;
+    width: 505px; */
+  }
+
+  #SearchByHeader{
+    margin-top: 90px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 25px;
+  }
+
+  .container-fluid{
+    padding: 0;
+   `margin: 0;
+    /* margin-left: 15%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:300px;
+    height:275px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .FilterBox{
+    margin-top: 20px;
+    padding-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+    border-radius: 10px;
+    background-color:#f16334;
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    text-align: center;
+    /* color: #43464B; */
+    color: #FFFFFF;
+  }
+
+  .FilterBox:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+  }
+
+  .one-edge-shadow {
+  	-webkit-box-shadow: 0 8px 6px -6px black;
+  	   -moz-box-shadow: 0 8px 6px -6px black;
+  	        box-shadow: 0 8px 6px -6px black;
+  }
+
+  .WriteaReview{
+    font-style: italic;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: center;
+    margin-top: 110px;
+    justify-content: center;
+  }
+
+  .WriteaReview:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .line{
+    margin-top: 10px;
+    height: 2px;
+    margin-left: 40%;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+
+  }
+
+  .AboutUs
+  {
+    font-weight: bold;
+    margin-left: 45px;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    color: #43464B;
+
+  }
+
+  #whitebackground{
+    padding-top: 10px;
+    width:600px;
+    background-color:#FFFFFF;
+    height: 600px;
+
+  }
+
+  .graycolordiv{
+    margin-top: 10px;
+    background-color : #F8F8F8;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  .whitecolordiv{
+    background-color: #FFFFFF;
+    height: 30px;
+  }
+
+  .graycolorbox{
+    margin-top: 100px;
+    background-color: #F8F8F8;
+    width: 600px;
+    height: 400px;
+  }
+
+  .lineAbout{
+    margin-top: 10px;
+    height: 3px;
+    margin-left: 8%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+  }
+
+  .AboutUsFont{
+
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-family: 'Lato', sans-serif;
+    width: 300px;
+    font-weight: bold;
+
+  }
+
+  .AboutUs:hover{
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }
+
+  .AuthorHeader{
+    width:275px;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) IPAD*/
+@media only screen and (min-width: 768px) {
+
+  #SignUpLogin{
+    margin-top: 15px;
+    font-size: 28px;
+    margin-left: 70%;
+    font-family: 'Lato', sans-serif;
+  }
+  #SignUpLogin:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #Header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size:45px;
+    color: #43464B;
+  }
+
+  .HeaderDiv{
+    margin-top: 45px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 67px;
+    width: 505px; */
+  }
+
+  #SearchByHeader{
+    margin-top: 140px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 28px;
+  }
+
+  .container-fluid{
+    padding: 0;
+    margin: 0;
+    margin-left: 11%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:600px;
+    height:150px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .FilterBox{
+    margin-top: 60px;
+    padding-top: 50px;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+    border-radius: 10px;
+    background-color:#f16334;
+    /* background-color: #525456; */
+    width: 175px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    /* color: #43464B; */
+    color: #FFFFFF;
+  }
+
+  .FilterBox:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+  }
+
+  .one-edge-shadow {
+  	-webkit-box-shadow: 0 8px 6px -6px black;
+  	   -moz-box-shadow: 0 8px 6px -6px black;
+  	        box-shadow: 0 8px 6px -6px black;
+  }
+
+  .WriteaReview{
+    font-style: italic;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: center;
+    margin-top: 200px;
+    justify-content: center;
+  }
+
+  .WriteaReview:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .line{
+    margin-top: 10px;
+    height: 2px;
+    margin-left: 45%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+  }
+    .AboutUs
+    {
+      font-weight: bold;
+      margin-left: 30px;
+      font-size: 50px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    #whitebackground{
+      padding-top: 10px;
+      background-color:#FFFFFF;
+      height: 300px;
+
+    }
+
+    .graycolordiv{
+      margin-top: 100px;
+      background-color : #F8F8F8;
+      height: 250px;
+      margin-bottom: 50px;
+    }
+    .whitecolordiv{
+      background-color: #FFFFFF;
+      height: 30px;
+    }
+
+    .graycolorbox{
+      margin-top: 100px;
+      background-color: #F8F8F8;
+      width: 600px;
+      height: 400px;
+    }
+
+    .lineAbout{
+      margin-top: 10px;
+      height: 3px;
+      margin-left: 2%;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      background-color:#f16334;
+    }
+
+    .AboutUsFont{
+      margin-top: 75px;
+      margin-left: 30px;
+      font-family: 'Lato', sans-serif;
+      width: 1100px;
+      font-weight: bold;
+
+    }
+
+    .AboutUs:hover{
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    .AuthorHeader{
+      margin-top: 20px;
+      font-size: 25px;
+      margin-left: 2%;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+    }
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {.
+  #SignUpLogin{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: 85%;
+    font-family: 'Lato', sans-serif;
+  }
+  #SignUpLogin:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #Header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+
+    /* font-family: 'Roboto', sans-serif; */
+    font-size:60px;
+    color: #43464B;
+  }
+
+  .HeaderDiv{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 67px;
+    width: 505px; */
+  }
+
+  #SearchByHeader{
+    margin-top: 120px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 35px;
+  }
+
+  .container-fluid{
+    padding: 0;
+   `margin: 0;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:1100px;
+    height:150px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .FilterBox{
+    margin-top: 60px;
+    padding-top: 50px;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+    border-radius: 10px;
+    background-color:#f16334;
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    /* color: #43464B; */
+    color: #FFFFFF;
+  }
+
+  .FilterBox:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+  }
+
+  .one-edge-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+  }
+
+  .WriteaReview{
+    font-style: italic;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: center;
+    margin-top: 150px;
+    justify-content: center;
+  }
+
+  .WriteaReview:hover{
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .line{
+    margin-top: 10px;
+    height: 2px;
+    margin-left: 48%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+  }
+
+  .AboutUs
+  {
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  #whitebackground{
+    padding-top: 10px;
+    background-color:#FFFFFF;
+    height: 400px;
+
+  }
+
+  .graycolordiv{
+    margin-top: 100px;
+    background-color : #F8F8F8;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  .whitecolordiv{
+    background-color: #FFFFFF;
+    height: 30px;
+  }
+
+  .graycolorbox{
+    margin-top: 100px;
+    background-color: #F8F8F8;
+    width: 600px;
+    height: 400px;
+  }
+
+  .lineAbout{
+    margin-top: 10px;
+    height: 3px;
+    margin-left: 2%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+  }
+
+  .AboutUsFont{
+    margin-top: 75px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+    width: 1100px;
+    font-weight: bold;
+
+  }
+
+  .AboutUs:hover{
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .AuthorHeader{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 2%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+
+
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #SignUpLogin{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: 85%;
+    font-family: 'Lato', sans-serif;
+  }
+  #SignUpLogin:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #Header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+
+    /* font-family: 'Roboto', sans-serif; */
+    font-size:60px;
+    color: #43464B;
+  }
+
+  .HeaderDiv{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 67px;
+    width: 505px; */
+  }
+
+  #SearchByHeader{
+    margin-top: 120px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 35px;
+  }
+
+  .container-fluid{
+    padding: 0;
+   `margin: 0;
+    margin-left: 16%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:1100px;
+    height:150px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .FilterBox{
+    margin-top: 60px;
+    padding-top: 50px;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+    border-radius: 10px;
+    background-color:#f16334;
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    text-align: center;
+    /* color: #43464B; */
+    color: #FFFFFF;
+  }
+
+  .FilterBox:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+  }
+
+  .one-edge-shadow {
+  	-webkit-box-shadow: 0 8px 6px -6px black;
+  	   -moz-box-shadow: 0 8px 6px -6px black;
+  	        box-shadow: 0 8px 6px -6px black;
+  }
+
+  .WriteaReview{
+    font-style: italic;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: center;
+    margin-top: 150px;
+    justify-content: center;
+  }
+
+  .WriteaReview:hover{
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .line{
+    margin-top: 10px;
+    height: 2px;
+    margin-left: 48%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+  }
+
+  .AboutUs
+  {
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  #whitebackground{
+    padding-top: 10px;
+    background-color:#FFFFFF;
+    height: 400px;
+
+  }
+
+  .graycolordiv{
+    margin-top: 100px;
+    background-color : #F8F8F8;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  .whitecolordiv{
+    background-color: #FFFFFF;
+    height: 30px;
+  }
+
+  .graycolorbox{
+    margin-top: 100px;
+    background-color: #F8F8F8;
+    width: 600px;
+    height: 400px;
+  }
+
+  .lineAbout{
+    margin-top: 10px;
+    height: 3px;
+    margin-left: 2%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#f16334;
+  }
+
+  .AboutUsFont{
+    margin-top: 75px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+    width: 1100px;
+    font-weight: bold;
+
+  }
+
+  .AboutUs:hover{
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .AuthorHeader{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 2%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+  }
