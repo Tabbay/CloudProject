@@ -1,0 +1,27 @@
+.page {
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    width: 100%;
+}
+
+.login {
+    display: inherit;
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+}
+
+.signup {
+    display: inherit;
+    height: 100%;
+    width: 50%;
+    background-color: blueviolet;
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+}

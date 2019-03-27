@@ -18,47 +18,42 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="index.css">
+      <link rel="stylesheet" type="text/css" href="index1.css">
     </head>
     <body>
 
-     <div id="SignUpLogin">
-      Sign Up / Login
-     </div>
-
-     <div class="HeaderDiv">
-       <h1 id="Header"> Rate My Internship  </h1>
-     </div>
-     <p id="SearchByHeader"> Search By </p>
-
-     <div class="container-fluid ">
-        <div class="FilterBox one-edge-shadow">COMPANY</div>
-        <div class="FilterBox one-edge-shadow">POSITION</div>
-        <div class="FilterBox one-edge-shadow">HIGHEST RATE</div>
-     </div>
-
-     <div class="WriteaReview"> Write a Review </div>
-     <div class="line"></div>
-    <div class="graycolordiv "> </div>
-
-     <div id="whitebackground">
-       <div class="whitecolordiv">
-           <div class="AboutUs"> About Us </div>
-              <div class="lineAbout"> </div>
-             <div id=".graycolorbox">
-              <h2 class="AboutUsFont">  Rate My Internship was designed to make it easier to spread feedback about Internships.
-                Simply access Internship reviews by entering a Company/Job Position or View the Highest Rated Internships currently. Create a profile to Write a Review.
-
-                <h3 class="AuthorHeader"> Created By: Tabia Cannon | Zari McFadden | Zuri Levene-Harvell <h3>
-
-              </h2>
-             </div>
-
+    <div class="upper">
+        <input type="button" id="SignUpLogin" class="signup" onclick="location.href='signup-login/signup-login.html';" value="Sign Up / Login"/>
+    
+        <div class="HeaderDiv">
+          <h1 id="Header"> <input type="button" class="header" onclick="location.href='index.html';" value="Rate My Internship"/></h1>
+        </div>
+        <p id="SearchByHeader"> Search By </p>
+  
+        <div class="container-fluid ">
+          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="location.href='company/company.html';" value="COMPANY"/></span>
+          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="location.href='position/position.html';" value="POSITION"/></span>
+          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="location.href='highest-rate/highest-rate.html';" value="HIGHEST RATE"/></span>
+        </div>
+        <span tabindex="-1" class="WriteaReview"><input type="button" class="WriteaReview" onclick="location.href='write-a-review/review.html';" value="Write a Review"/></span>
+        <div class="line"></div>
+    </div>
+    <div class="lower">
+      <div id="whitebackground">
+    
+              <div class="AboutUs" fxLayout="column"> About Us </div>
+                  <div class="lineAbout"> </div>
+                <div id="graycolorbox">
+                  <h2 class="AboutUsFont" fxLayout="column">  Rate My Internship was designed to make it easier to spread feedback about Internships.
+                    Simply access Internship reviews by entering a Company/Job Position or View the Highest Rated Internships currently. Create a profile to Write a Review.
+    
+                    <h3 class="AuthorHeader" fxLayout="column"> Created By: Tabia Cannon | Zari McFadden | Zuri Levene-Harvell <h3>
+    
+                  </h2>
+                </div>
 
       </div>
-
-
-     </div>
+    </div>
 
     </body>
 </html>
