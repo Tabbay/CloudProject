@@ -1,0 +1,207 @@
+@media screen and (max-width: 599px) {
+    .enter {
+        flex-direction: column;
+    }
+
+    .cancelButton {
+        width: 50%;
+    }
+
+    .loginButton {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+
+}
+
+@media screen and (min-width: 1920px) and (max-width: 5000px) {
+
+}
+
+html {
+    overflow: hidden;
+}
+
+form {
+    background-color : #F8F8F8;
+    border: none;
+    padding: 10% 0;
+}
+
+body {
+    background-color : #F8F8F8;
+}
+
+.container {
+    background-color : #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /*
+    padding: 3%;
+    margin-top: 10%;
+    */
+}
+
+.login {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #43464B;
+    text-align: center;
+    margin: 5%;
+}
+
+.user-name {
+    text-align: center;
+    margin: 5%;
+}
+
+.email {
+    text-align: center;
+    margin: 5%;
+}
+
+.password {
+    text-align: center;
+    margin: 5%;
+}
+
+.enter {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.createaccount {
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    text-align: center;
+    margin: 2% auto;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 5% 0;
+}
+
+.cancelButton {
+    background-color:#f16334;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 3%;
+    width: 125px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: #43464B;
+}
+
+.cancelButton:focus{
+    outline: none;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+}
+
+.cancelButton:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+}
+
+.signupButton {
+    background-color:#f16334;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 3%;
+    width: 125px;
+    float: right;
+    border-radius: 5px;
+    box-shadow: #43464B;
+}
+
+.signupButton:focus{
+    outline: none;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+}
+
+.signup:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #43464B;
+    border: #f16334 !important;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    float: bottom;
+    /* margin: 10% 0; */
+}
+
+.input {
+    display: inline;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.google {
+    margin: 2%;
+    background-color: transparent;
+    border: none;
+}
+
+.google:focus {
+    outline: none;
+    font-weight: bold;
+}
+
+.google:hover {
+    outline: none;
+    font-weight: bold;
+}
+
+.googleImage {
+    height: 20px;
+    margin: auto;
+}
+
+.facebook {
+    margin: 2%;
+    background-color: transparent;
+    border: none;
+}
+
+.facebook:focus {
+    outline: none;
+    font-weight: bold;
+}
+
+.facebook:hover{
+    outline: none;
+    font-weight: bold;
+}
+
+.facebookImage {
+    height: 20px;
+    margin: auto;
+}

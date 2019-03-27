@@ -7,7 +7,7 @@
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
         <script src="app.js"></script>
-        <title> Rate My Internship - Signup </title>
+        <title> Rate My Internship - Login</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -22,5 +22,33 @@
     </head>
 
     <body>
+        <form>
+            <div class="container">
+                <h1 class="login">Signup</h1>
+                <label class="user-name">Name</label>
+                <input type="text" placeholder="Enter name" name="name" required>
+                <label class="email">Email</label>
+                <input type="text" placeholder="Enter email" name="email" required>
+                <label class="password">Password</label>
+                <input type="text" placeholder="Enter password" name="password" required>
+                <label class="password">Re-Enter Password</label>
+                <input type="text" placeholder="Re-Enter password" name="reenter-password" required>
+                <span tabindex="-1" class="createaccount"><input type="button" class="createaccount" onclick="location.href='../signup-login/login.html';" value="Login"/></span>
+                <div class="enter">
+                    <button type="button" class="cancelButton">Cancel</button>
+                    <button type="submit" class="signupButton">Signup</button>
+                </div>
+            </div>
+            <div class="other">
+                <span class="input" tabindex="-1">
+                    <img src="googlelogo.png" class="googleImage"/>
+                    <button type="button" class="google">Sign up with Google</button>
+                </span>
+                <span class="input" tabindex="-1">
+                    <img src="facebooklogo.png" class="facebookImage" />
+                    <button type="button" class="facebook">Sign up with Facebook</button>
+                </span>
+            </div>
+        </form>
     </body>
 </htmL>
