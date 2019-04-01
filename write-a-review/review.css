@@ -1,0 +1,38 @@
+html {
+    background-color:#f16334; 
+}
+
+body {
+    width: 100%;
+}
+
+.page {
+    background-color:#f16334;
+    height: 900px;
+}
+.header {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 100%;
+    vertical-align: center;
+    color: #F8F8F8;
+}
+
+.review {
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 700px; 
+    width: 80%;
+    background-color: #F8F8F8;
+}
+
+.container {
+    /* display: flex;
+    background-color: #F8F8F8;
+     */
+}
