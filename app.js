@@ -1,6 +1,6 @@
 // Initialize Firebase
 
-import firebase from "firebase/app";
+import firebase from firebase;
 
 var config = {
   apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
@@ -11,5 +11,3 @@ var config = {
   messagingSenderId: "514235121016"
 };
 firebase.initializeApp(config);
-
-var storage = firebase.storage();
