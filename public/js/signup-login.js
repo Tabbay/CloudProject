@@ -1,5 +1,7 @@
+import firebase from firebase;
+
 var login = true;
-function signup(email, password){
+function signup(email, password, password1){
     //var email = document.getElementById('email').value;
     //var password = document.getElementById('password').value;
     print(email);
@@ -9,6 +11,11 @@ function signup(email, password){
     }
     if (password.length < 4) {
       alert('Please enter a password.');
+      return;
+    }
+
+    if (password != password1)  {
+      alert("Passwords don't match.");
       return;
     }
     // Sign in with email and pass.

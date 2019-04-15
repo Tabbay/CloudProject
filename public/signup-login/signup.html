@@ -35,11 +35,11 @@
                 <label class="password">Password</label>
                 <input type="password" placeholder="Enter password" name="password" id="password" required>
                 <label class="password">Re-Enter Password</label>
-                <input type="password" placeholder="Re-Enter password" name="reenter-password" id="password"  required>
+                <input type="password" placeholder="Re-Enter password" name="reenter-password" id="reenter-password"  required>
                 <span tabindex="-1" class="createaccount"><input type="button" class="createaccount" onclick="location.href='../signup-login/login.html';" value="Login"/></span>
                 <div class="enter">
                     <button type="button" class="cancelButton">Cancel</button>
-                    <button type="submit" class="signupButton" onclick="signup(document.getElementById('email').value, document.getElementById('password').value)">Signup</button>
+                    <button type="submit" class="signupButton" onclick="signup(document.getElementById('email').value, document.getElementById('password').value), document.getElementById('reenter-password').value">Signup</button>
                 </div>
             </div>
             <div class="other">
