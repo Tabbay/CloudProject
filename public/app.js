@@ -1,4 +1,6 @@
-// const config = {
+// import firebase from firebase;
+
+// var config = {
 //   apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
 //   authDomain: "rate-my-internship.firebaseapp.com",
 //   databaseURL: "https://rate-my-internship.firebaseio.com",

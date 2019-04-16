@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <htmL>
     <head>
-        <!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
-        <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script> -->
-        <!-- <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script> -->
-        <script type="module" src="/js/signup-login.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <script src="../js/signup-login.js"></script>
         <title> Rate My Internship - Login</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
@@ -25,6 +20,17 @@
     </head>
 
     <body>
+        <script>
+            var config = {
+            apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
+            authDomain: "rate-my-internship.firebaseapp.com",
+            databaseURL: "https://rate-my-internship.firebaseio.com",
+            projectId: "rate-my-internship",
+            storageBucket: "rate-my-internship.appspot.com",
+            messagingSenderId: "514235121016"
+            };
+            firebase.initializeApp(config);
+        </script>
         <form>
             <div class="container">
                 <h1 class="login">Signup</h1>
@@ -36,10 +42,10 @@
                 <input type="password" placeholder="Enter password" name="password" id="password" required>
                 <label class="password">Re-Enter Password</label>
                 <input type="password" placeholder="Re-Enter password" name="reenter-password" id="reenter-password"  required>
-                <span tabindex="-1" class="createaccount"><input type="button" class="createaccount" onclick="location.href='../signup-login/login.html';" value="Login"/></span>
+                <span tabindex="-1" class="createaccount"><input type="button" class="createaccount" onclick="location.href='../signup-login/login.html';" value="Login"></span>
                 <div class="enter">
                     <button type="button" class="cancelButton">Cancel</button>
-                    <button type="submit" class="signupButton" onclick="signup(document.getElementById('email').value, document.getElementById('password').value), document.getElementById('reenter-password').value">Signup</button>
+                    <input type="button" class="signupButton" id="signup" onclick="signup(document.getElementById('email').value, document.getElementById('password').value, document.getElementById('reenter-password').value);">
                 </div>
             </div>
             <div class="other">
@@ -53,5 +59,6 @@
                 </span>
             </div>
         </form>
+
     </body>
 </htmL>
