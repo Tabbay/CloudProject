@@ -2,11 +2,10 @@
 
 var login = true;
 
-function signup(email, password, password1) {
+function userSignUp(email, password, password1) {
     // var email = document.getElementById('email').value;
     // var password = document.getElementById('password').value;
     // var password1 = document.getElementById('reenter-password').value;
-    print(email);
     if (email.length < 4) {
       alert('Please enter an email address.');
       return;
