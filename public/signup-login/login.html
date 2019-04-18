@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <script src="../js/signup-login.js"></script>
+        <title> Rate My Internship - Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+
+    <body>
+        <!-- <script>
+            var config = {
+            apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
+            authDomain: "rate-my-internship.firebaseapp.com",
+            databaseURL: "https://rate-my-internship.firebaseio.com",
+            projectId: "rate-my-internship",
+            storageBucket: "rate-my-internship.appspot.com",
+            messagingSenderId: "514235121016"
+            };
+            firebase.initializeApp(config);
+        </script> -->
+        <form>
+            <div class="container">
+                <h1 class="login">Login</h1>
+                <label class="email">Email</label>
+                <input type="text" placeholder="Enter email" name="email" id="email" required>
+                <label class="password">Password</label>
+                <input type="password" placeholder="Enter password" name="password" id="password" required>
+                <span tabindex="-1" class="createaccount"><input type="button" class="createaccount" onclick="location.href='../signup-login/signup.html';" value="Create an account"/></span>
+                <div class="enter">
+                    <button type="button" class="cancelButton">Cancel</button>
+                    <input type="button" class="loginButton" value="Login" onclick="userSignIn(document.getElementById('email').value, document.getElementById('password').value);">
+                </div>
+            </div>
+            <div class="other">
+                <span class="input" tabindex="-1">
+                    <img src="googlelogo.png" class="googleImage"/>
+                    <input type="button" class="google" value="Sign in with Google" onclick="loginWithGoogle();">
+                </span>
+                <span class="input" tabindex="-1">
+                    <img src="facebooklogo.png" class="facebookImage" />
+                    <button type="button" class="facebook">Sign in with Facebook</button>
+                </span>
+            </div>
+        </form>
+    </body>
+</htmL>

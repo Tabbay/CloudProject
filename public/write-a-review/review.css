@@ -1,0 +1,196 @@
+html {
+    /* background-color:#f16334;  */
+    background-color: #F8F8F8;
+}
+
+body {
+    width: 100%;
+}
+
+.page {
+    background-color: #F8F8F8;
+    /* background-color:#f16334; */
+    height: 1000px;
+}
+
+ul {
+    margin: 0;
+}
+
+.header {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 100%;
+    vertical-align: center;
+    /* color: #F8F8F8; */
+    /* color:#f16334; */
+    color: #43464B;
+}
+
+.review {
+    background-color:#f16334;
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 75%; 
+    width: 85%;
+    /* background-color: #F8F8F8; */
+}
+
+.comment-container {
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    float: right;
+    padding: 3% 0;
+}
+
+.info-container {
+    display: block;
+    width: 50%;
+    height: 100%;
+    /* background-color: peachpuff; */
+    float: left;
+    padding: 3% 1%;
+}
+
+.comment {
+    height: 75%;
+    width: 90%;
+    margin: 10% auto;
+    padding: 1%;
+    display: block;
+}
+
+.comment-label {
+    color: #F8F8F8;
+    /* margin-left: 10%; */
+}
+
+.comment span {
+    margin: 0 auto;
+}
+
+.company {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating {
+    color: #F8F8F8;
+    float:left;
+    width:100%;
+    margin: 2% 0;
+}
+
+.star-rating { 
+    border: none;
+    float: left;
+}
+  
+.star-rating > input { display: none; } 
+.star-rating > label:before { 
+    margin: 0 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+  
+/* .star-rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+} */
+  
+.star-rating > label { 
+    color: #fff; 
+    float: right; 
+}
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+.star-rating > input:checked ~ label, /* show gold star when clicked */
+.star-rating:not(:checked) > label:hover, /* hover current star */
+.star-rating:not(:checked) > label:hover ~ label {color: #43464B;} /* hover previous stars in list */
+
+.star-rating > input:checked + label:hover, /* hover current star when changing rating */
+.star-rating > input:checked ~ label:hover,
+.star-rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.star-rating > input:checked ~ label:hover ~ label {color: #43464B;} 
+
+.length {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.input-length {
+    width: 75%;
+    display: grid;
+}
+
+.return {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.salary {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.location {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.position {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.classification {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.again {
+    color: #F8F8F8;
+    width: 100%;
+    margin: 2% 0;
+    display: grid;
+}
+
+.submitButton {
+    float: right;
+    margin-right: 5%;
+    /* color:#f16334; */
+    color: #43464B;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: #43464B;
+}
