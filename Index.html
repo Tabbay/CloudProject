@@ -7,6 +7,7 @@
       <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
       <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
       <script src="app.js"></script>
+      <script src="index.js"></script>
       <title> Rate My Internship </title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
@@ -24,15 +25,23 @@
 
     <div class="upper">
         <input type="button" id="SignUpLogin" class="signup" onclick="location.href='signup-login/signup-login.html';" value="Sign Up / Login"/>
-    
+
         <div class="HeaderDiv">
           <h1 id="Header"> <input type="button" class="header" onclick="location.href='index.html';" value="Rate My Internship"/></h1>
         </div>
         <p id="SearchByHeader"> Search By </p>
-  
+
+        <div>
+          <form id="searchBox" action="">
+            <input class="searchform"type="text" placeholder="Type a Position or Company" name="search">
+            <button type="submit"> <i class="searchbutton"></i></button>
+          </form>
+
+        </div>
+
         <div class="container-fluid ">
-          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="location.href='company/company.html';" value="COMPANY"/></span>
-          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="location.href='position/position.html';" value="POSITION"/></span>
+          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="showsearchBox()" value="COMPANY"/></span>
+          <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="showsearchBox()" value="POSITION"/></span>
           <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="location.href='highest-rate/highest-rate.html';" value="HIGHEST RATE"/></span>
         </div>
         <span tabindex="-1" class="WriteaReview"><input type="button" class="WriteaReview" onclick="location.href='write-a-review/review.html';" value="Write a Review"/></span>
@@ -40,15 +49,15 @@
     </div>
     <div class="lower">
       <div id="whitebackground">
-    
+
               <div class="AboutUs" fxLayout="column"> About Us </div>
                   <div class="lineAbout"> </div>
                 <div id="graycolorbox">
                   <h2 class="AboutUsFont" fxLayout="column">  Rate My Internship was designed to make it easier to spread feedback about Internships.
                     Simply access Internship reviews by entering a Company/Job Position or View the Highest Rated Internships currently. Create a profile to Write a Review.
-    
+
                     <h3 class="AuthorHeader" fxLayout="column"> Created By: Tabia Cannon | Zari McFadden | Zuri Levene-Harvell <h3>
-    
+
                   </h2>
                 </div>
 
