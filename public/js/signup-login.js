@@ -1,6 +1,23 @@
-//import firebase from '../../node_modules/@firebase';
+// import firebase from firebase;
 
-var login = true;
+var config = {
+  apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
+  authDomain: "rate-my-internship.firebaseapp.com",
+  databaseURL: "https://rate-my-internship.firebaseio.com",
+  projectId: "rate-my-internship",
+  storageBucket: "rate-my-internship.appspot.com",
+  messagingSenderId: "514235121016"
+  };
+firebase.initializeApp(config);
+
+const firestore = defineFirestore();
+
+function defineFirestore() {
+  const firestore = firebase.firestore();
+  // const settings = { /* your settings... */ timestampsInSnapshots: true };
+  // firestore.settings(settings);
+  return firestore;
+}
 
 function userSignUp(email, password, password1) {
     // var email = document.getElementById('email').value;
@@ -37,48 +54,86 @@ function userSignUp(email, password, password1) {
     // [END createwithemail]
   }
 
-// function initApp() {
-//     // Listening for auth state changes.
-//     // [START authstatelistener]
-//     firebase.auth().onAuthStateChanged(function(user) {
-//       // [START_EXCLUDE silent]
-//       document.getElementById('quickstart-verify-email').disabled = true;
-//       // [END_EXCLUDE]
-//       if (user) {
-//         // User is signed in.
-//         var displayName = user.displayName;
-//         var email = user.email;
-//         var emailVerified = user.emailVerified;
-//         var photoURL = user.photoURL;
-//         var isAnonymous = user.isAnonymous;
-//         var uid = user.uid;
-//         var providerData = user.providerData;
-//         // [START_EXCLUDE]
-//         document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-//         document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-//         document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
-//         if (!emailVerified) {
-//           document.getElementById('quickstart-verify-email').disabled = false;
-//         }
-//         // [END_EXCLUDE]
-//       } else {
-//         // User is signed out.
-//         // [START_EXCLUDE]
-//         document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-//         document.getElementById('quickstart-sign-in').textContent = 'Sign in';
-//         document.getElementById('quickstart-account-details').textContent = 'null';
-//         // [END_EXCLUDE]
-//       }
-//       // [START_EXCLUDE silent]
-//       document.getElementById('quickstart-sign-in').disabled = false;
-//       // [END_EXCLUDE]
-//     });
-//     // [END authstatelistener]
-//     document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
-//     document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
-//     document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
-//     document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
-//   }
-//   window.onload = function() {
-//     initApp();
-//   };
+function userSignIn(email, password) {
+  // if (firebase.auth().currentUser) {
+  //   // [START signout]
+  //   firebase.auth().signOut();
+  //   // [END signout]
+  // } else {
+  if (email.length < 4) {
+    alert('Please enter an email address.');
+    return;
+  }
+  if (password.length < 4) {
+    alert('Please enter a password.');
+    return;
+  }
+  // Sign in with email and pass.
+  // [START authwithemail]
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // [START_EXCLUDE]
+    if (errorCode === 'auth/wrong-password') {
+      alert('Wrong password.');
+    } else {
+      alert(errorMessage);
+    }
+    console.log(error);
+    document.getElementById('quickstart-sign-in').disabled = false;
+    // [END_EXCLUDE]
+  });
+  // [END authwithemail]
+  alert("Login successful.");
+  
+  document.getElementById('quickstart-sign-in').disabled = true;
+}
+
+function loginWithGoogle() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(function (result) {
+      var user = firebase.auth().currentUser;
+      var uid = user.uid;
+      var email = user.email;
+
+      var userRef = firestore.collection("users").doc(uid);
+      userRef.get().then(function (doc) {
+          if (doc.exists) {
+              //the user is signing in, jus
+              sessionStorage.setItem("userID", uid);
+              document.location.href = "../html/dashboard.html";
+          } else {
+              // create new user in the users table
+              sessionStorage.setItem("userID", uid);
+              createUserQUERY(email, uid, email);
+
+          }
+      }).catch(function (error) {
+          console.log("Error getting document:", error);
+      });
+
+      alert("Login successful.");
+
+      //if first time i.e user.uid not in users key, make a new user with the key user.uid, set all attributes except username
+      //if signing in,
+      //
+      //window.alert(result.user.displayName);
+      //document.getElementById("UserName").innerHTML = result.user.
+  });
+}
+
+function linkGoogleAccount() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().currentUser.linkWithPopup(provider).then(function (result) {
+      // Accounts successfully linked.
+      var credential = result.credential;
+      var user = result.user;
+      alert("linking successful");
+      // ...
+  }).catch(function (error) {
+      alert("Error linking");
+      // Handle Errors here.
+      // ...
+  });
+}

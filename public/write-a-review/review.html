@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <htmL>
     <head>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
-        <script src="app.js"></script>
-        <title> Rate My Internship - Login</title>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <script src="../js/review.js"></script>
+        <title class="title"> Rate My Internship - Login</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -18,15 +16,92 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="review.css">
     </head>
     <body>
         <div class="page">
             <h1 id="Header"> <input type="button" class="header" onclick="location.href='../index.html';" value="Rate My Internship"/></h1>
-            <form class="review">  
-                <div class="container">
+            <form class="review"> 
+                <div class="info-container">
+                    <ul>
+                        <div class="company">
+                            <label>What company did you intern with?</label>
+                            <input class="input-length" type="text" placeholder="Company" name="name" required>
+                        </div>
+                        <div class="rating">
+                            <label>Overall Rating</label>
+                            <br>
+                            <div class="star-rating">
+                                <input id="star5" type="radio" class="star" value="5"><label for="star5"></label>
+                                <input id="star4" type="radio" class="star" value="4"><label for="star4"></label>
+                                <input id="star3" type="radio" class="star" value="3"><label for="star3"></label>
+                                <input id="star2" type="radio" class="star" value="2"><label for="star2"></label>
+                                <input id="star5" type="radio" class="star" value="1"><label for="star1"></label>
+                            </div>
+                        </div>
+                        <div class="length">
+                            <label>How long was the internship?</label>
+                            <input class="input-length" type="text" placeholder="Length of Internship" name="name" required>
+                        </div>
+                        <div class="return">
+                            <label>Did you recieve a return offer?</label>
+                            <select class="input-length">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="salary">
+                            <label>What was your salary?</label>
+                            <input class="input-length" type="text" placeholder="Salary" name="name">
+                        </div>
+                        <div class="position">
+                            <label>What was your position? (SWE, PM, etc.)</label>
+                            <input class="input-length" type="text" placeholder="Position" name="name" required>
+                        </div>
+                        <div class="location">
+                            <label>Where was your internship?</label>
+                            <input class="input-length" type="text" placeholder="Location" name="name" required>
+                        </div>
+                        <div class="classification">
+                            <label>What was your classification during the internship?</label>
+                            <select class="input-length">
+                                <option value="freshman">Freshman</option>
+                                <option value="sophomore">Sophomore</option>
+                                <option value="junior">Junior</option>
+                                <option value="senior">Senior</option>
+                                <option value="graduated">Already Graduated</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="again">
+                            <label>Would you work there again?</label>
+                            <select class="input-length">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </ul>
+                </div> 
+                <div class="comment-container">
+                    <textarea type="text" class="comment" placeholder="Any additional comments?" name="comment" required></textarea>
+                    <button type="submit" class="submitButton">Submit Review</button>
                 </div>
             </form>
         </div>
+        <script>
+           $("[type='radio']").on('click', function (e) {
+            var previousValue = $(this).attr('previousValue');
+            if (previousValue == 'true') {
+                this.checked = false;
+                $(this).attr('previousValue', this.checked);
+            }
+            else {
+                this.checked = true;
+                $(this).attr('previousValue', this.checked);
+            }
+        });
+        </script>
     </body>
 </htmL>

@@ -4,8 +4,7 @@
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
-
-        <script type="module" src="../js/signup-login.js"></script>
+        <script src="../js/signup-login.js"></script>
         <title> Rate My Internship - Signup/Login </title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
@@ -21,6 +20,17 @@
     </head>
 
     <body>
+        <script>
+            var config = {
+            apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
+            authDomain: "rate-my-internship.firebaseapp.com",
+            databaseURL: "https://rate-my-internship.firebaseio.com",
+            projectId: "rate-my-internship",
+            storageBucket: "rate-my-internship.appspot.com",
+            messagingSenderId: "514235121016"
+            };
+            firebase.initializeApp(config);
+        </script>
         <div class="page">
             <div class="HeaderDiv">
                 <h1 id="Header"> <input type="button" class="header" onclick="location.href='../index.html';" value="Rate My Internship"/></h1>
