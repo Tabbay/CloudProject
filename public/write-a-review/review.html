@@ -4,7 +4,9 @@
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
         <script src="../js/review.js"></script>
+        <script src="../app.js"></script>
         <title class="title"> Rate My Internship - Login</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
@@ -21,6 +23,17 @@
         <link rel="stylesheet" type="text/css" href="review.css">
     </head>
     <body>
+        <!-- <script>
+            var config = {
+                apiKey: "AIzaSyDWgYi1o92tuBUUhGpg0lCWKjFm1iOBdMg",
+                authDomain: "rate-my-internship.firebaseapp.com",
+                databaseURL: "https://rate-my-internship.firebaseio.com",
+                projectId: "rate-my-internship",
+                storageBucket: "rate-my-internship.appspot.com",
+                messagingSenderId: "514235121016",
+            };
+            firebase.initializeApp(config);
+        </script> -->
         <div class="page">
             <h1 id="Header"> <input type="button" class="header" onclick="location.href='../index.html';" value="Rate My Internship"/></h1>
             <form class="review"> 
@@ -28,9 +41,9 @@
                     <ul>
                         <div class="company">
                             <label>What company did you intern with?</label>
-                            <input class="input-length" type="text" placeholder="Company" name="name" required>
+                            <input class="input-length" type="text" placeholder="Company" id="company" required>
                         </div>
-                        <div class="rating">
+                        <div id="rating" class="rating">
                             <label>Overall Rating</label>
                             <br>
                             <div class="star-rating">
@@ -43,30 +56,30 @@
                         </div>
                         <div class="length">
                             <label>How long was the internship?</label>
-                            <input class="input-length" type="text" placeholder="Length of Internship" name="name" required>
+                            <input class="input-length" type="text" placeholder="Length of Internship" id="length" required>
                         </div>
                         <div class="return">
                             <label>Did you recieve a return offer?</label>
-                            <select class="input-length">
+                            <select class="input-length" id="return-offer">
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select>
                         </div>
                         <div class="salary">
                             <label>What was your salary?</label>
-                            <input class="input-length" type="text" placeholder="Salary" name="name">
+                            <input class="input-length" type="text" placeholder="Salary" id="salary">
                         </div>
                         <div class="position">
                             <label>What was your position? (SWE, PM, etc.)</label>
-                            <input class="input-length" type="text" placeholder="Position" name="name" required>
+                            <input class="input-length" type="text" placeholder="Position" id="position" required>
                         </div>
                         <div class="location">
                             <label>Where was your internship?</label>
-                            <input class="input-length" type="text" placeholder="Location" name="name" required>
+                            <input class="input-length" type="text" placeholder="Location" id="location" required>
                         </div>
                         <div class="classification">
                             <label>What was your classification during the internship?</label>
-                            <select class="input-length">
+                            <select class="input-length" id="classification">
                                 <option value="freshman">Freshman</option>
                                 <option value="sophomore">Sophomore</option>
                                 <option value="junior">Junior</option>
@@ -77,7 +90,7 @@
                         </div>
                         <div class="again">
                             <label>Would you work there again?</label>
-                            <select class="input-length">
+                            <select class="input-length" id="work-again">
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select>
@@ -85,8 +98,8 @@
                     </ul>
                 </div> 
                 <div class="comment-container">
-                    <textarea type="text" class="comment" placeholder="Any additional comments?" name="comment" required></textarea>
-                    <button type="submit" class="submitButton">Submit Review</button>
+                    <textarea type="text" class="comment" placeholder="Any additional comments?" id="user-comment"></textarea>
+                    <button type="submit" class="submitButton" onclick="addReview();">Submit Review</button>
                 </div>
             </form>
         </div>
