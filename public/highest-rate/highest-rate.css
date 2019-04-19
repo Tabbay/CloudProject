@@ -1,0 +1,94 @@
+html {
+    /* background-color:#f16334;  */
+    background-color: #F8F8F8;
+}
+
+body {
+    width: 100%;
+}
+
+.page {
+    background-color: #F8F8F8;
+    /* background-color:#f16334; */
+    height: 1000px;
+}
+
+.header {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 100%;
+    vertical-align: center;
+    /* color: #F8F8F8; */
+    /* color:#f16334; */
+    color: #43464B;
+}
+
+.rating-container {
+    /* background-color:#43464B; */
+    background-color:#f16334; 
+    margin: 0 auto;
+    width: 65%;
+    height: 80%;
+    padding: 2%;
+}
+
+p {
+    /* margin: 5% 0; */
+    color: #F8F8F8;;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-container {
+    display: flex;
+    margin: 2% 0;
+}
+
+.company-title {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#company-header {
+    font-size: 30px;
+    margin: auto;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+#rating-header {
+    font-size: 30px;
+    margin: auto;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.rating-title {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.reviews {
+    display: flex;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.rating {
+    width: 50%;
+    margin: auto;
+}
+
+.company {
+    width: 50%;
+    margin: auto;
+}

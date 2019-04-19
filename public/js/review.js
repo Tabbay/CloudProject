@@ -15,7 +15,6 @@ function addReview(){
   var storesRef = rootRef.child('reviews/');
   var newStoreRef = storesRef.push();
   newStoreRef.set({
-      name: "Review",
       company: document.getElementById('company').value,
       rating: 5, 
       length:  document.getElementById('length').value,
