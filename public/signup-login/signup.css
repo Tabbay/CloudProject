@@ -33,17 +33,20 @@ html {
 }
 
 form {
-    background-color : #F8F8F8;
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
     border: none;
     padding: 10% 0;
 }
 
 body {
-    background-color : #F8F8F8;
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
 }
 
 .container {
-    background-color : #F8F8F8;
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -56,7 +59,8 @@ body {
 .login {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    color: #43464B;
+    color: white;
+    /* color: #43464B; */
     text-align: center;
     margin: 5%;
 }
@@ -94,14 +98,18 @@ body {
     border: none;
     background-color: transparent;
     padding: 5% 0;
+    color: white;
+    font-weight: bold;
 }
 
 .cancelButton {
-    background-color:#f16334;
+    background-color: white;
+    color: #43464B;
+    /* background-color:#f16334; */
     outline: none;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    color: white;
+    /* color: white; */
     margin: 3%;
     width: 125px;
     float: left;
@@ -111,24 +119,28 @@ body {
 
 .cancelButton:focus{
     outline: none;
-    background-color: #FFFFFF;
-    color: #43464B;
-    border: #f16334 !important;
+    background-color: #f16334;
+    color: #f16334;
+    border: #43464B;
+    /* color: #43464B; */
+    /* border: #f16334 !important; */
 }
 
 .cancelButton:hover{
     cursor: pointer;
-    background-color: #FFFFFF;
+    background-color: #f16334;
     color: #43464B;
-    border: #f16334 !important;
+    border: #43464B !important;
 }
 
 .signupButton {
-    background-color:#f16334;
+    background-color: white;
+    color: #43464B;
+    /* background-color:#f16334; */
     outline: none;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    color: white;
+    /* color: white; */
     margin: 3%;
     width: 125px;
     float: right;
@@ -138,16 +150,19 @@ body {
 
 .signupButton:focus{
     outline: none;
-    background-color: #FFFFFF;
-    color: #43464B;
-    border: #f16334 !important;
+    background-color: #f16334;
+    color: #f16334;
+    border: #43464B;
+    /* background-color: #FFFFFF; */
+    /* color: #43464B; */
+    /* border: #f16334 !important; */
 }
 
 .signupButton:hover{
     cursor: pointer;
-    background-color: #FFFFFF;
+    background-color: #f16334;
     color: #43464B;
-    border: #f16334 !important;
+    border: #43464B !important;
 }
 
 .other {
@@ -168,6 +183,7 @@ body {
     margin: 2%;
     background-color: transparent;
     border: none;
+    color: white;
 }
 
 .google:focus {
@@ -189,6 +205,7 @@ body {
     margin: 2%;
     background-color: transparent;
     border: none;
+    color: white;
 }
 
 .facebook:focus {
