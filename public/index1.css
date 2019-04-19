@@ -3,6 +3,7 @@ body{
 }
 
 .header {
+    font-size: 50px;
     background-color: transparent;
     outline: none;
     border: none;
@@ -12,7 +13,7 @@ body{
     display: inline-block;
     width: 100%;
     padding: 1%;
-    margin: 1% 0;
+    margin-bottom: 10%;
 }
 
 .lower{
@@ -33,12 +34,12 @@ body{
 }
 
 #SignUpLogin{
-    margin-top: 15px;
+    margin-top: 2%px;
     text-align: right;
     float: right;
     border: none;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Lato', sans-serif;
 }
 #SignupLogin:focus{
@@ -54,6 +55,7 @@ body{
 }
 
 #Header{
+    margin: 5%;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     /* font-size:35px; */
@@ -72,7 +74,7 @@ body{
     text-align: center;
     font-weight: normal;
     font-family: 'Lato', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .container-fluid{
@@ -94,7 +96,7 @@ body{
     font-weight: bold;
     border-radius: 10px;
     background-color:#f16334;
-    height: 200px;
+    height: 150px;
     color: #FFFFFF;
 }
 
@@ -124,7 +126,8 @@ body{
     font-family: 'Lato', sans-serif;
     display: flex;
     text-align: center;
-    margin: 2% auto;
+    margin-left: .5% auto;
+    margin-right: .5 .5% auto;
     justify-content: center;
     outline: none;
     border: none;
@@ -157,13 +160,14 @@ body{
     font-size: 35px;
     font-family: 'Oswald', sans-serif;
     color: #43464B;
-    margin: 3%; 
+    margin-left: 2.5%;
+    margin-bottom:1%;
 }
 
 #whitebackground{
     padding-top: 10px;
     background-color:#FFFFFF;
-    height: 100%; 
+    height: 100%;
 }
 
 .graycolordiv{
@@ -188,7 +192,7 @@ body{
 }
 
 .lineAbout{
-    margin-top: 3%;
+    margin-top: .5%;
     height: 3px;
     margin-left: 3%;
     width: 70px;
@@ -206,7 +210,6 @@ body{
 .AboutUs:hover{
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 2px;
 }
 
 .AuthorHeader{
@@ -217,7 +220,7 @@ body{
 }
 
 .text {
-    font-size: 25px;
+    font-size: 35px;
     /*
     display: flex;
     position: absolute;
@@ -260,6 +263,30 @@ a:focus{
     outline: none;
 }
 
+#searchBox{
+  display: none;
+  background-color: #FFFFFF;
+  display:flex;
+  width:auto;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px solid grey;
+  border-radius:4%;
+
+}
+.searchform{
+  width: 90%;
+  border-radius:4%;
+  border:none;
+}
+.searchbutton{
+  width:60%;
+  background: #2196F3;
+  border: 1px solid grey;
+  height: 30%;
+  color: black;
+  cursor: pointer;
+}
 @media screen and (max-width: 599px) {
     .container-fluid{
         display: flex;
@@ -268,7 +295,7 @@ a:focus{
         height: 400px;
         margin: 0 3%;
     }
-    
+
     .FilterBox{
         display: flex;
         width: 100%;
@@ -298,6 +325,20 @@ a:focus{
     .AuthorHeader {
         margin: 5% 0;
     }
+
+    #SearchByHeader{
+      margin-top: 50px;
+    }
+
+    .header{
+      margin-top: 10%;
+      padding-top: 5%;
+      font-size: 40px;
+    }
+
+    .text{
+      font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
@@ -306,7 +347,7 @@ a:focus{
         flex-direction: row;
         width: auto;
     }
-    
+
     .FilterBox{
         display: flex;
         width: 100%;
@@ -319,7 +360,7 @@ a:focus{
         flex-direction: row;
         width: auto;
     }
-    
+
     .FilterBox{
         display: flex;
         width: 100%;
@@ -331,7 +372,7 @@ a:focus{
         flex-direction: row;
         width: 100%;
     }
-    
+
     .FilterBox{
         display: flex;
         width: 100%;
@@ -342,7 +383,7 @@ a:focus{
         width: 100%;
         height: 100%;
     }
-    
+
     .FilterBox{
         width: 100%;
         height: 100%;
