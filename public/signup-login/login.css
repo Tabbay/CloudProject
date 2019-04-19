@@ -62,6 +62,14 @@ body {
     color: white;
 }
 
+.createaccount:hover {
+    font-size: 17px;
+}
+
+.createaccount:focus {
+    font-size: 17px;
+}
+
 .cancelButton {
     background-color: white;
     color: #43464B;
@@ -80,10 +88,10 @@ body {
 .cancelButton:focus{
     outline: none;
     background-color: #f16334;
-    color: #f16334;
-    border: #43464B;
-    /* color: #43464B; */
-    /* border: #f16334 !important; */
+    /* color: #f16334; */
+    /* border: #43464B; */
+    color: #43464B;
+    border: #f16334 !important;
 }
 
 .cancelButton:hover{
@@ -91,6 +99,8 @@ body {
     background-color: #f16334;
     color: #43464B;
     border: #43464B !important;
+    /* color: #43464B; */
+    /* border: #43464B !important; */
 }
 
 .loginButton {
