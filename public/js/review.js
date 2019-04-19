@@ -9,6 +9,11 @@ var config = {
   firebase.initializeApp(config);
 
 var database = firebase.database();
+var rating;
+
+function getStarRating(star_value) {
+  rating = star_value;
+}
 
 function addReview(){
   var rootRef = firebase.database().ref('/');
@@ -16,7 +21,7 @@ function addReview(){
   var newStoreRef = storesRef.push();
   newStoreRef.set({
       company: document.getElementById('company').value,
-      rating: 5, 
+      rating: rating, 
       length:  document.getElementById('length').value,
       return_offer: document.getElementById('return-offer').value,
       salary: document.getElementById('salary').value,

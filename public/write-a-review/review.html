@@ -47,11 +47,11 @@
                             <label>Overall Rating</label>
                             <br>
                             <div class="star-rating">
-                                <input id="star5" type="radio" class="star" value="5"><label for="star5"></label>
-                                <input id="star4" type="radio" class="star" value="4"><label for="star4"></label>
-                                <input id="star3" type="radio" class="star" value="3"><label for="star3"></label>
-                                <input id="star2" type="radio" class="star" value="2"><label for="star2"></label>
-                                <input id="star5" type="radio" class="star" value="1"><label for="star1"></label>
+                                <input id="star5" type="radio" class="star" value="5" onclick="getStarRating(document.getElementById('star5').value);"><label for="star5"></label>
+                                <input id="star4" type="radio" class="star" value="4" onclick="getStarRating(document.getElementById('star4').value);"><label for="star4"></label>
+                                <input id="star3" type="radio" class="star" value="3" onclick="getStarRating(document.getElementById('star3').value);"><label for="star3"></label>
+                                <input id="star2" type="radio" class="star" value="2" onclick="getStarRating(document.getElementById('star2').value);"><label for="star2"></label>
+                                <input required id="star1" type="radio" class="star" value="1" onclick="getStarRating(document.getElementById('star1').value);"><label for="star1"></label>
                             </div>
                         </div>
                         <div class="length">
