@@ -3,7 +3,8 @@
     flex-direction: column;
     height: 1000px; 
     width: 100%;
-    background-color:#f16334;
+    background-color : #F8F8F8
+    /* background-color:#f16334; */
 }
 
 .login {
@@ -15,26 +16,30 @@
     display: inherit;
     height: 100%;
     width: 50%;
-    background-color: blueviolet;
+
+    /* background-color: blueviolet; */
 }
 
 .container {
     height: 700px;
     width: 400px;
     margin: auto;
-    background-color : #F8F8F8;
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
 }
 
 .header {
     background-color: transparent;
     outline: none;
     border: none;
-    color: #F8F8F8;
+    /* background-color:#f16334; */
+    /* color: #F8F8F8; */
 }
 
 #Header{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    color: #43464B;
 }
 
 .HeaderDiv{
@@ -42,7 +47,8 @@
 }
 
 iframe {
-    background-color : #F8F8F8;
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
     border: none;
 }
 
