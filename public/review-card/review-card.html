@@ -1,13 +1,15 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <head>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
-        <script src="../js/company.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+        <!-- <script src="/path/to/handlebars.min.js"></script> -->
+        <script src="../js/review-card.js"></script>
         <script src="../app.js"></script>
-        <title class="title header"> Rate My Internship - Login</title>
+        <title class="title"> Rate My Internship - Login</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -20,14 +22,31 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="company.css">
+        <link rel="stylesheet" type="text/css" href="review-card.css">
     </head>
-    <body>
-        <div class="page">
-            <h1 id="Header"> <input type="button" class="header" onclick="location.href='../index.html';" value="Rate My Internship"/></h1>
-            <div class="company-card-container">
-                <iframe allowtransparency="true" class="review-card-frame" src="../review-card/review-card.html"></iframe>
+    <body onload="populateReviews()">
+        <script id="review-card" type="text/x-handlebars-template">
+            <div class="card">
+                <div class="top">
+                    <div class="company" id="company">{{company}}</div>
+                </div>
+                <div class="left">
+                    <div class="position" id="position">{{position}}</div>
+                    <div class="length" id="length">{{length}}</div>
+                    <div class="salary" id="salary">{{salary}}</div>
+                    <div class="return" id="return">{{return}}</div>
+                </div>
+                <div class="right">
+                    <div class="rating" id="rating">{{rating}}</div>
+                    <div class="location" id="location">{{location}}</div>
+                    <div class="classification" id="classification">{{classification}}</div>
+                    <div class="offer" id="offer">{{offer}}</div>
+                </div>
+                <div class="bottom">
+                    <div class="review" id="review">{{review}}</div>
+                    <div class="read-more" id="read-more">Read More</div>
+                </div>
             </div>
-        </div>
+        </script>
     </body>
 </html>

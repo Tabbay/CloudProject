@@ -1,0 +1,49 @@
+html {
+    /* background-color:#f16334;  */
+    background-color: #F8F8F8;
+}
+
+body {
+    width: 100%;
+}
+
+.page {
+    background-color: #F8F8F8;
+    /* background-color:#f16334; */
+    height: 1000px;
+}
+
+.header {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 100%;
+    vertical-align: center;
+    /* color: #F8F8F8; */
+    /* color:#f16334; */
+    color: #43464B;
+}
+
+.company-card-container {
+    height: 350px;
+    width: 575px;
+    margin: auto;
+    background-color: peachpuff;
+}
+
+.review-card-frame {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* background-color:#f16334; */
+}
+
+iframe {
+    margin: auto;
+    /* background-color:#f16334; */
+    /* background-color : #F8F8F8; */
+    border: none;
+}

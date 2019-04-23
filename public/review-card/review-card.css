@@ -1,0 +1,130 @@
+html {
+    overflow: hidden;
+}
+
+.card {
+    display: inline-block;
+    background-color: #f16334;
+    width: 575px;
+    height: 350px;
+}
+
+.top {
+    background-color: palevioletred;
+    width: 100%;
+    height: 18%;
+    top: 0;
+    padding: 0 3%;
+}
+
+.left {
+    background-color: aqua;
+    float: left;
+    width: 50%;
+    height: 52%;
+    padding: 0 3%;
+}
+
+.company {
+    width: 100%;
+    padding: 1% 0;
+    font-size: 35px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.position {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.length {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.salary {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.return {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.right {
+    background-color: blueviolet;
+    float: right;
+    width: 50%;
+    height: 52%;
+    padding: 0 3%;
+}
+
+.rating {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.location {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.classification {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.offer {
+    width: 100%;
+    padding: 1%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bottom { 
+    background-color: yellow;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 3%;
+}
+
+.review {
+    width: 100%;
+    padding: 1% 0;
+    font-size: 25px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.read-more {
+    padding: 1%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
