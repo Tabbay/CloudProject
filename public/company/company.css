@@ -11,6 +11,7 @@ body {
     background-color: #F8F8F8;
     /* background-color:#f16334; */
     height: 1000px;
+    /* overflow: scroll; */
 }
 
 .header {
@@ -28,7 +29,8 @@ body {
 }
 
 .company-card-container {
-    height: 350px;
+    /* height: 350px; */
+    height: 1000px;
     width: 575px;
     margin: auto;
     background-color: peachpuff;
