@@ -25,3 +25,46 @@
 //             // ...
 //         }
 //     });
+// const search = instantsearch({
+//   appId: 'Y0AM91WVVL',
+//   apiKey: 'f1216651a0a4cdaf9d9fb92e4687b80d',
+//   indexName: 'instant_search',
+//   urlSync:true
+// });
+
+const search = instantsearch({
+  indexName: 'reviews',
+  searchClient: algoliasearch(
+    'Y0AM91WVVL',
+    'd2b17d72265d5a93017be07cedbc1021'
+  ),
+});
+
+// Add widgets
+// ...
+
+// const searchClient = algoliasearch('Y0AM91WVVL', 'f1216651a0a4cdaf9d9fb92e4687b80d');
+//
+// const search = instantsearch({
+//   indexName: 'reviews',
+//   searchClient,
+// });
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#hits',
+    hitsPerPage:10,
+    templates:{
+      item: document.getElementById('hit-template').innerHTML,
+      empty: "we didn't find any results <em>\"{{query}}\" </em>"
+    }
+  })
+);
+
+search.start();

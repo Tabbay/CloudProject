@@ -1,6 +1,14 @@
 body{
     background-color : #F8F8F8;
 }
+#company-content{
+  height: 20px;
+}
+
+#company{
+  height: 20px;
+
+}
 
 .header {
     font-size: 50px;
@@ -263,7 +271,7 @@ a:focus{
     outline: none;
 }
 
-#searchBox{
+#searchB{
   display: none;
   background-color: #FFFFFF;
   display:flex;

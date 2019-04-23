@@ -6,6 +6,7 @@
   "dependencies": {
     "@angular/cdk": "^7.3.7",
     "@angular/flex-layout": "^7.0.0-beta.24",
+    "algoliasearch": "^3.32.1",
     "firebase": "^5.9.4",
     "flexbox": "0.0.3"
   },
