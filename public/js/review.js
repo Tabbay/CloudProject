@@ -10,6 +10,28 @@ var config = {
 
 var database = firebase.database();
 var rating;
+var user = firebase.auth().currentUser;
+
+// firebase.auth().onAuthStateChanged(function(user) {
+//   var review = document.getElementById("review");
+//   var signin = document.getElementById("login");
+//   if (user) {
+//     review.style.display = "block";
+//     signin.style.display = "none";
+//   } else {
+//     review.style.display = "none";
+//     signin.style.display = "flex";
+//   }
+// });
+
+function toggleContent() {
+  var x = document.getElementById("review");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 function getStarRating(star_value) {
   rating = star_value;

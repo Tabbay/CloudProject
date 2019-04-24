@@ -2,23 +2,46 @@ html {
     overflow: hidden;
 }
 
+body {
+    position: relative;
+    height: 1000px;
+    overflow: scroll;
+    background-color: #F8F8F8;
+}
+
 .card {
     display: inline-block;
     background-color: #f16334;
     width: 575px;
     height: 350px;
+    margin: 2% 0;
+    position: relative;
+}
+
+.header{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 100%;
+    vertical-align: center;
+    color: #43464B;
+    text-align: center;
 }
 
 .top {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     width: 100%;
     height: 18%;
     top: 0;
     padding: 0 3%;
+    margin: 2% 0;
 }
 
 .left {
-    background-color: aqua;
+    /* background-color: aqua; */
     float: left;
     width: 50%;
     height: 52%;
@@ -36,7 +59,7 @@ html {
 .position {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -44,7 +67,7 @@ html {
 .length {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -52,7 +75,7 @@ html {
 .salary {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -60,13 +83,13 @@ html {
 .return {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
 
 .right {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     float: right;
     width: 50%;
     height: 52%;
@@ -76,7 +99,7 @@ html {
 .rating {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -84,7 +107,7 @@ html {
 .location {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -92,7 +115,7 @@ html {
 .classification {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -100,13 +123,13 @@ html {
 .offer {
     width: 100%;
     padding: 1%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
 
 .bottom { 
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 100%;
     height: 30%;
     position: absolute;
@@ -117,8 +140,8 @@ html {
 .review {
     width: 100%;
     padding: 1% 0;
-    font-size: 25px;
-    color: black;
+    font-size: 20px;
+    color: white;
     font-family: 'Oswald', sans-serif;
 }
 
