@@ -10,7 +10,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-// console.log("Hello");
 var database = firebase.database();
 
 function populateReviews() {

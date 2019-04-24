@@ -8,7 +8,8 @@
     "@angular/flex-layout": "^7.0.0-beta.24",
     "algoliasearch": "^3.32.1",
     "firebase": "^5.9.4",
-    "flexbox": "0.0.3"
+    "flexbox": "0.0.3",
+    "handlebars": "^4.1.2"
   },
   "devDependencies": {},
   "scripts": {

@@ -81,5 +81,3 @@ function deleteIndexRecord({key}) {
       process.exit(1);
     });
 }
-
-s

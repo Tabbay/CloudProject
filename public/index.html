@@ -2,6 +2,8 @@
 <html>
     <head
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.1.1/themes/reset-min.css" integrity="sha256-JQ2nnTmybhOWSjfV3sa8mG0ZVhTCcORER4cyXc5HL10=" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.1.1/themes/algolia-min.css" integrity="sha256-nkldBwBn2NQqRL1mod7BqHsJ6cEOn6u/ln6F/lI4CFo=" crossorigin="anonymous">
+
       <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.1/dist/algoliasearchLite.js" integrity="sha256-pMaJf0I78weeXGkRMBDO6jSulxC/q3sb0aPdtV2N8n0=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.2.0" integrity="sha256-/8usMtTwZ01jujD7KAZctG0UMk2S2NDNirGFVBbBZCM=" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css" />
@@ -41,34 +43,21 @@
           </form>
 
         </div> -->
-        <header>
-          <div id="input-container searchB">
-            <input id="search-input" placeholder="Search Company/Review">
+
+        <!-- <div id="searchbox"></div> -->
+        <div class="ais-InstantSearch">
+
+          <div class="right-panel">
+            <div id="searchbox"></div>
+            <div id="hits"></div>
+            <div id="pagination"></div>
           </div>
-        </header>
+        </div>
 
-        <main>
-          <div id="hits"></div>
-          <div id="pagination"> </div>
-        </main>
-
-        <script type="text/html" id="hit-template">
-          <div class="hit">
-            <div class="hit-image">
-              <img src="{{image}}" alt="{{name}}">
-            </div>
-            <div class="hit-content">
-              <h3 class="hit-price">${{price}}</h3>
-              <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
-              <p class="hit-description">{{{_highlightResult.description.value}}}</p>
-            </div>
-
-          </div>
-        </script>
 
         <script src="app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.0/dist/algoliasearchLite.min.js"></script>
-        
+
 
         <div class="container-fluid ">
           <span tabindex="-1" class="FilterBox one-edge-shadow text"><input type="button" class="button" onclick="showsearchBox()" value="COMPANY"/></span>
