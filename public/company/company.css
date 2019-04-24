@@ -14,6 +14,41 @@ body {
     /* overflow: scroll; */
 }
 
+.signup {
+    width: 100%;
+}
+
+.signup:focus{
+    outline: none;
+}
+
+.signup:focus-within{
+    font-weight: bold;
+}
+
+#SignUpLogin{
+    padding: 0 1%;
+    margin-top: 1%;
+    text-align: right;
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+#SignupLogin:focus{
+    outline: none;
+}
+#SignupLogin:focus-within{
+    font-weight: bold;
+}
+
+#SignUpLogin:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 .header {
     background-color: transparent;
     outline: none;

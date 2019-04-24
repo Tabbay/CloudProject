@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+        <!-- <script src="/path/to/handlebars.min.js"></script> -->
+        <script src="../js/review-card.js"></script>
+        <script src="../app.js"></script>
+        <title class="title"> Rate My Internship - Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="review-card.css">
+    </head>
+    <body onload="populateReviews()">
+        <div id="card"></div>
+        <h3 class="header">Reviews by Position</h3>
+        <script id="review-card" type="text/x-handlebars-template">
+            <div id="review-card" class="card">
+                <div class="top">
+                    <div class="company" id="company">{{position}}</div>
+                </div>
+                <div class="left">
+                    <div class="position" id="position">Company: {{company}}</div>
+                    <div class="length" id="length">Length: {{length}}</div>
+                    <div class="salary" id="salary">Salary: {{salary}}</div>
+                    <div class="return" id="return">Would you return? {{return}}</div>
+                </div>
+                <div class="right">
+                    <div class="rating" id="rating">Rating: {{rating}}</div>
+                    <div class="location" id="location">Location: {{location}}</div>
+                    <div class="classification" id="classification">Classification: {{classification}}</div>
+                    <div class="offer" id="offer">Return Offer? {{offer}}</div>
+                </div>
+                <div class="bottom">
+                    <div class="review" id="review">{{review}}</div>
+                    <!-- <div class="read-more" id="read-more">Read More</div> -->
+                </div>
+            </div>
+        </script>
+    </body>
+</html>

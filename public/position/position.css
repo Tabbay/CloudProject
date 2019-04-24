@@ -1,0 +1,86 @@
+html {
+    /* background-color:#f16334;  */
+    background-color: #F8F8F8;
+}
+
+body {
+    width: 100%;
+}
+
+.page {
+    background-color: #F8F8F8;
+    /* background-color:#f16334; */
+    height: 1000px;
+    /* overflow: scroll; */
+}
+
+.signup {
+    width: 100%;
+}
+
+.signup:focus{
+    outline: none;
+}
+
+.signup:focus-within{
+    font-weight: bold;
+}
+
+#SignUpLogin{
+    padding: 0 1%;
+    margin-top: 1%;
+    text-align: right;
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+#SignupLogin:focus{
+    outline: none;
+}
+#SignupLogin:focus-within{
+    font-weight: bold;
+}
+
+#SignUpLogin:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.header {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 3% auto;
+    width: 100%;
+    vertical-align: center;
+    /* color: #F8F8F8; */
+    /* color:#f16334; */
+    color: #43464B;
+}
+
+.company-card-container {
+    /* height: 350px; */
+    height: 1000px;
+    width: 575px;
+    margin: auto;
+    background-color: peachpuff;
+}
+
+.review-card-frame {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* background-color:#f16334; */
+}
+
+iframe {
+    margin: auto;
+    /* background-color:#f16334; */
+    /* background-color : #F8F8F8; */
+    border: none;
+}
