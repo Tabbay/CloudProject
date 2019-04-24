@@ -17,6 +17,25 @@ ul {
     margin: 0;
 }
 
+.login {
+    display: inherit;
+    width: 100%; 
+}
+
+.container {
+    height: 700px;
+    width: 400px;
+    margin: auto;
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
+}
+
+iframe {
+    background-color:#f16334;
+    /* background-color : #F8F8F8; */
+    border: none;
+}
+
 .header {
     background-color: transparent;
     outline: none;
