@@ -1,0 +1,3 @@
+const algoliasearch = require ("algoliasearch");
+const client = algoliasearch("Y0AM91WVVL", "f1216651a0a4cdaf9d9fb92e4687b80d");
+const index = client.initIndex("reviews");
