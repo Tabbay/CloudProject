@@ -60,9 +60,11 @@ function addOrUpdateIndexRecord(review) {
     .saveObject(record)
     .then(() => {
       console.log('Firebase object indexed in Algolia', record.objectID);
+      return null;
     })
     .catch(error => {
       console.error('Error when indexing review into Algolia', error);
+      res.error(500);
       process.exit(1);
     });
 }
@@ -75,9 +77,11 @@ function deleteIndexRecord({key}) {
     .deleteObject(objectID)
     .then(() => {
       console.log('Firebase object deleted from Algolia', objectID);
+      return null;
     })
     .catch(error => {
       console.error('Error when deleting review from Algolia', error);
+        res.error(500);
       process.exit(1);
     });
 }
