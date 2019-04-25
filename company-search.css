@@ -5,18 +5,22 @@ body{
 }
 
 h1{
-  font-size: 35px;
-  font: Playfair Display;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
   text-align: center;
 }
 
-ul{ 
+.menu{ 
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 125px;
+  overflow: hidden;
   background-color:#f39c12;
+}
+
+li {
+  float: left;
 }
 
 .menu-button{
@@ -35,9 +39,11 @@ ul{
 li a{
   display: block;
   color:black;
-  padding: 8px 16px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
 }
 
 li a:hover {
@@ -55,4 +61,29 @@ li a:hover {
   height: 60px;
   border-radius: 60px;
   padding: 10px;
+}
+
+.search-button{
+  color: #ecf0f1;
+  float: right;
+  width: 75px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f16334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt{
+  border: none;
+  background: none;
+  outline: none; 
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 25px;
+  transition: 0.5s;
+  line-height: 60px;
+  width: 240px;
 }
